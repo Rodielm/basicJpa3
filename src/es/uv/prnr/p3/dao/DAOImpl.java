@@ -46,7 +46,7 @@ public abstract class DAOImpl<K, T> implements DAO<K, T> {
 		em.getTransaction().commit();
 	}
 
-	// TODO Recibe un identificador de una entidad concreta y lo borra devolviendo
+	// Recibe un identificador de una entidad concreta y lo borra devolviendo
 	// true o devuelve false
 	
 	public boolean deleteById(K id) {
@@ -59,7 +59,7 @@ public abstract class DAOImpl<K, T> implements DAO<K, T> {
 		return !this.em.contains(entity);
 	}
 
-	// TODO Recibe una condici�n para la cl�usula WHERE con formato JPQL (criteria)
+	// Recibe una condici�n para la cl�usula WHERE con formato JPQL (criteria)
 	// y retorna las entidades que la cumplen
 	
 	public List<T> findByCriteria(String fieldName, String value) {
